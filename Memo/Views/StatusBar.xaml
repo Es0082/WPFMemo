@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Memo.Views.StatusBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid Height="50" Width="700" RenderTransformOrigin="0.508,0.487">
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Path Name" VerticalAlignment="Center"/>
+        <TextBlock Margin="73,17,300,17" TextWrapping="Wrap"  Text="{Binding FilePath_s.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="417,0,0,0" TextWrapping="Wrap" Text="Num of C" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="473,0,0,0" TextWrapping="Wrap" Text="{Binding  TexLength.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="217" Height="16"/>
+    </Grid>
+</UserControl>
